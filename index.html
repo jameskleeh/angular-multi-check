@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/Schlogen/angular-multi-check">View on GitHub</a>
 
           <h1 id="project_title">Angular Checkbox Range</h1>
-          <h2 id="project_tagline">AngularJS module for checking a range of checkboxes</h2>
+          <h2 id="project_tagline">AngularJS module for add the ability to check a range of checkboxes</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/Schlogen/angular-multi-check/archive/1.0.zip">Download this project as a .zip file</a>
@@ -32,13 +32,18 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>The direcitves <code>multi-check-group</code> and <code>multi-check</code> define which checkboxes should have the ability.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>
+  <div multi-check-group>
+    <div ng-repeat="p in people">
+      <label>
+        <input type="checkbox" multi-check ng-model="p.checked" /> {{p.name}}
+      </label>
+    </div>
+  </div>
 </code></pre>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
