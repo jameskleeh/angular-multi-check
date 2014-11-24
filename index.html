@@ -84,14 +84,14 @@
 <div ng-controller="MyController">
   <div multi-check-group>
     <div ng-repeat="p in people">
-      <label ng-init="p.checked = true">
+      <label>
         <input type="checkbox" multi-check ng-model="p.checked" /> {{p.name}}
         <span ng-if="$index == 2"> <-- <strong>Click this box</strong></span>
       </label>
     </div>
     -------------------------------------------------------
     <div ng-repeat="p in people2">
-      <label ng-init="p.checked = true">
+      <label>
         <input type="checkbox" multi-check ng-model="p.checked" /> {{p.name}}
         <span ng-if="$index == 2"> <-- <strong>Shift-Click this box</strong></span>
       </label>
