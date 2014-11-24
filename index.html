@@ -34,14 +34,14 @@
         <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
         <p>The direcitves <code>multi-check-group</code> and <code>multi-check</code> define which checkboxes should have the ability.</p>
 
-        <pre><code>&lt;div multi-check-group&gt;
-          &lt;div ng-repeat=&quot;p in people&quot;&gt;
-            &lt;label&gt;
-              &lt;input type=&quot;checkbox&quot; multi-check ng-model=&quot;p.checked&quot; /&gt; {{p.name}}
-            &lt;/label&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </code></pre>
+<pre><code>&lt;div multi-check-group&gt;
+  &lt;div ng-repeat=&quot;p in people&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; multi-check ng-model=&quot;p.checked&quot; /&gt; {{p.name}}
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
         <p>Follow the instructions below and observe all checkboxes in between become checked.</p>
         
@@ -75,23 +75,23 @@
 
         <h3><a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>You can define multiple groups!</h3>
         
-        <pre><code>&lt;div ng-controller=&quot;MyController&quot;&gt;
-          &lt;div multi-check-group&gt;
-            &lt;div ng-repeat=&quot;p in people&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;checkbox&quot; multi-check ng-model=&quot;p.checked&quot; /&gt; {{p.name}}
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div multi-check-group&gt;
-            &lt;div ng-repeat=&quot;p in people2&quot;&gt;
-              &lt;label&gt;
-                &lt;input type=&quot;checkbox&quot; multi-check ng-model=&quot;p.checked&quot; /&gt; {{p.name}}
-              &lt;/label&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </code></pre>
+<pre><code>&lt;div ng-controller=&quot;MyController&quot;&gt;
+  &lt;div multi-check-group&gt;
+    &lt;div ng-repeat=&quot;p in people&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; multi-check ng-model=&quot;p.checked&quot; /&gt; {{p.name}}
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div multi-check-group&gt;
+    &lt;div ng-repeat=&quot;p in people2&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; multi-check ng-model=&quot;p.checked&quot; /&gt; {{p.name}}
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
         
         <p>Follow the instructions below and observe the checkboxes inbetween are not checked because they are in different groups.</p>
         
