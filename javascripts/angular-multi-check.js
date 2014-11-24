@@ -1,3 +1,9 @@
+/*
+ * angular-multi-check
+ * http://schlogen.github.io/angular-multi-check/
+ * Version: 1.0 - 2014-24-11
+ * License: Apache
+ */
 angular.module('multiCheck', [])
     .directive('multiCheckGroup', function() {
         return {
