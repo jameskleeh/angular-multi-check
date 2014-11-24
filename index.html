@@ -44,7 +44,11 @@ $ git checkout gh-pages
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
 <div ng-app="myApp" ng-controller="MyController">
-  {{people}}
+<div multi-check-group>
+  <div ng-repeat="p in people">
+    <input type="checkbox" multi-check /> {{p.name}}
+  </div>
+</div>
 </div>
 
 <h3>
