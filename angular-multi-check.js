@@ -1,3 +1,4 @@
+angular.module('multiCheck', [])
     .directive('multiCheckGroup', function() {
         return {
             scope: {},
