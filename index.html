@@ -52,8 +52,8 @@
     <div ng-repeat="p in people">
       <label>
         <input type="checkbox" multi-check ng-model="p.checked" /> {{p.name}}
-        <span ng-if="$index == 2"> <-- Click this box</span>
-        <span ng-if="$index == 7"> <-- Shift-Click this box</span>
+        <span ng-if="$index == 2"> <-- <strong>Click this box</strong></span>
+        <span ng-if="$index == 7"> <-- <strong>Shift-Click this box</strong></span>
       </label>
     </div>
   </div>
