@@ -3,7 +3,10 @@
             scope: {},
             controller: function($scope) {
                 this.getElements = function() {
-                    return $scope.element.find("[multi-check]").toArray();
+                    var dataMultiCheck = Array.prototype.slice.call($scope.element[0].querySelectorAll('[data-multi-check]'), 0);
+                    var multiCheck = Array.prototype.slice.call($scope.element[0].querySelectorAll('[multi-check]'), 0);
+
+                    return multiCheck.concat(dataMultiCheck);
                 };
                 this.lastChecked = null;
             },
