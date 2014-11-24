@@ -46,7 +46,7 @@ $ git checkout gh-pages
 <div ng-app="myApp" ng-controller="MyController">
 <div multi-check-group>
   <div ng-repeat="p in people">
-    <input type="checkbox" multi-check /> {{p.name}}
+    <input type="checkbox" multi-check ng-model="p.checked" /> {{p.name}}
   </div>
 </div>
 </div>
