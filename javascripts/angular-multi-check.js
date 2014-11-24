@@ -4,7 +4,7 @@
  * Version: 1.0 - 2014-24-11
  * License: Apache
  */
-angular.module('multiCheck', [])
+angular.module('angular-multi-check', [])
     .directive('multiCheckGroup', function() {
         return {
             scope: {},
