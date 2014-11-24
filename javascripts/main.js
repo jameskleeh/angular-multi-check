@@ -12,4 +12,12 @@ angular.module('myApp', ['angular-multi-check'])
       {id: 8, name: 'Jeff'},
       {id: 9, name: 'Josh'}
     ];
+    
+    $scope.people2 = [
+      {id: 0, name: 'Sally'},
+      {id: 1, name: 'Sue'},
+      {id: 2, name: 'Serena'},
+      {id: 3, name: 'Sophia'},
+      {id: 4, name: 'Stephanie'}
+    ];
   });
