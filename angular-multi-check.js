@@ -9,7 +9,7 @@ angular.module('angular-multi-check', [])
     .directive('multiCheckGroup', function() {
         return {
             scope: {},
-            controller: function($scope) {
+            controller: ['$scope', function($scope) {
                 this.getElements = function() {
                     var dataMultiCheck = Array.prototype.slice.call($scope.element[0].querySelectorAll('[data-multi-check]'), 0);
                     var multiCheck = Array.prototype.slice.call($scope.element[0].querySelectorAll('[multi-check]'), 0);
@@ -17,7 +17,7 @@ angular.module('angular-multi-check', [])
                     return multiCheck.concat(dataMultiCheck);
                 };
                 this.lastChecked = null;
-            },
+            }],
             link: function(scope, element) {
                 scope.element = element;
             }
