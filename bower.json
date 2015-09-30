@@ -1,0 +1,25 @@
+{
+  "name": "angular-multi-chk",
+  "main": "angular-multi-check.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Schlogen/angular-multi-check",
+  "authors": [
+    "James Kleeh (james.kleeh@gmail.com)"
+  ],
+  "description": "Angular Multiple Checkbox",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "checkbox",
+    "multiple",
+    "selection"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
